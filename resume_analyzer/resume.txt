@@ -1,0 +1,6 @@
+Name:Ayesha
+Email:ayesha@gmail.com
+phone Number:03332289206
+skill:sql,python
+experiance:2 years
+education:bachelor in computer Science
