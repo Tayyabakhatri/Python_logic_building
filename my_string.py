@@ -94,6 +94,7 @@
 #     print("string is palindrome", palindrome)
 
 
+
 # 4 Reverse a string without using slicing.
 # string="he is a boy"
 # string = string.split()
