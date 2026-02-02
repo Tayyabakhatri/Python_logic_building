@@ -325,19 +325,19 @@
 # "****Java****"
 # "~~Ruby~~"
 # Ek program banao jo automatically side characters detect karke strip kare, bina manually character type kiye.
-# userInput = input("Enter multiple strings separated by comma: ")
+userInput = input("Enter multiple strings separated by comma: ")
 
 
-# def stripList(strings):
-#     result = []
-#     wordList = strings.split(",")
-#     for s in wordList:
-#         strippedString = s.strip("`~!@#$%^&*()_=+[]{}|;:'\",.<>?/ -")
-#         result.append(strippedString)
-#     return result
+def stripList(strings):
+    result = []
+    wordList = strings.split(",")
+    for s in wordList:
+        strippedString = s.strip("`~!@#$%^&*()_=+[]{}|;:'\",.<>?/ -")
+        result.append(strippedString)
+    return result
 
-# strippped=stripList(userInput)
-# print("Stripped strings are:", strippped)
+strippped=stripList(userInput)
+print("Stripped strings are:", strippped)
    
 # 25 ⭐ Intermediate Logic Questions
 #  — Loop / Condition

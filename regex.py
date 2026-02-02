@@ -54,7 +54,7 @@ import re
 # Regex likho jo ‘py’ se start hone wale words identify kare.
 
 # words="python pycharm pyramid java ruby"
-# match=re.findall(r"^py",words)
+# match=re.findall(r"\bpy\w*",words)
 # print("Words starting with 'py':", match)
 
 
@@ -96,18 +96,18 @@ mobiles = [
     "03601234567"   # invalid (6 not allowed after 03)
 ]
 
-# for name, mobile in zip(names, mobiles):
-#      print(name, "->", mobile)
+for name, mobile in zip(names, mobiles):
+     print(name, "->", mobile)
      
-# def is_valid_pakistani_number(number):
-#     pattern = r"^03[0-4][0-9]{8}$"
-#     return re.match(pattern, number)
+def is_valid_pakistani_number(number):
+    pattern = r"^03[0-4][0-9]{8}$"
+    return re.match(pattern, number)
 
-# for name, num in zip(names, mobiles):
-#     if is_valid_pakistani_number(num):
-#         print(f"{name}  ->  {num}  ->  valid ")
-#     else:
-#         print(f"{name}  ->  {num} ->  invalid")
+for name, num in zip(names, mobiles):
+    if is_valid_pakistani_number(num):
+        print(f"{name}  ->  {num}  ->  valid ")
+    else:
+        print(f"{name}  ->  {num} ->  invalid")
     
     
     
@@ -132,10 +132,10 @@ mobiles = [
 # Extract all emails from the string
 # line = "Ali: ali@gmail.com, Sara: sara123@yahoo.com"
 
-line = "Ali: ali@gmail.com, Sara: sara123@yahoo.com"
+# line = "Ali: ali@gmail.com, Sara: sara123@yahoo.com"
 
-match=re.findall(r'\S@\S*',line)
-print(match)
+# match=re.findall(r'\S@\S*',line)
+# print(match)
 
 
 
